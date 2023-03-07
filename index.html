@@ -1,0 +1,20 @@
+<html>
+	<header>
+		<script>
+			const URL = "https://cbhv.appian.community/suite/webapi/tPmwsw?Appian-API-Key=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzNjAzZTFhZS01ZTgzLTQ5YzEtYmMzZi0yMWZiMTljNWVlNmQifQ.KO0YMyT-BMC7w6L5N9wpStUBOBhhiPI_FY6evsRHhhU";
+			
+			async function makeAPICall(){
+			const result= await fetch(URL)
+			result.json().then(
+			data=>{console.log(data)})
+			}
+			
+			makeAPICall()
+			
+		</script>
+	</header>
+	
+	<body>
+		<div id="result"></div>
+	</body>
+</html>
